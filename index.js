@@ -1,36 +1,36 @@
-// //stack,set,queue,Array,linkedlist,tree,weakmap
-// class myFunc {
-//   constructor() {
-//     this.count = 0;
-//     this.stack = [];
-//     this.push = function (value) {
-//       this.stack[this.count] = value;
-//       this.count++;
-//     };
-//     this.pop = function () {
-//       if (this.count === 0) {
-//         return undefined;
-//       }
-//       this.count--;
-//       const result = this.stack[this.count];
-//       delete this.stack[this.count];
-//       return result;
-//     };
-//     this.peek = function () {
-//       return this.stack[this.count - 1];
-//     };
-//     this.size = function () {
-//       return this.count;
-//     };
-//   }
-// }
-// const newStack = new myFunc();
-// newStack.push(1);
-// newStack.push(3);
-// console.log(newStack.peek());
-// console.log(newStack.pop());
-// console.log(newStack.peek());
-// console.log(newStack.size());
+//stack,set,queue,Array,linkedlist,tree,weakmap
+class myFunc {
+  constructor() {
+    this.count = 0;
+    this.stack = [];
+    this.push = function (value) {
+      this.stack[this.count] = value;
+      this.count++;
+    };
+    this.pop = function () {
+      if (this.count === 0) {
+        return undefined;
+      }
+      this.count--;
+      const result = this.stack[this.count];
+      delete this.stack[this.count];
+      return result;
+    };
+    this.peek = function () {
+      return this.stack[this.count - 1];
+    };
+    this.size = function () {
+      return this.count;
+    };
+  }
+}
+const newStack = new myFunc();
+newStack.push(1);
+newStack.push(3);
+console.log(newStack.peek());
+console.log(newStack.pop());
+console.log(newStack.peek());
+console.log(newStack.size());
 // const letter = [];
 // const word = "bob";
 // let rword = "";
