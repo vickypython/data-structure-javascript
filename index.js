@@ -31,22 +31,23 @@ console.log(newStack.peek());
 console.log(newStack.pop());
 console.log(newStack.peek());
 console.log(newStack.size());
-// const letter = [];
-// const word = "bob";
-// let rword = "";
-// //pushing word to stack
-// for (var i = 0; i < word.length; i++) {
-//   letter.push(word[i]);
-// }
-// //popin out of stack and reversing
-// for (var i = 0; i < word.length; i++) {
-//   rword += letter.pop();
-// }
-// if (word === rword) {
-//   console.log(word + " is a palindrome");
-// } else {
-//   console.log(word + "is not a palindrome");
-// }
+//here is a palindrome 
+const letter = [];
+const word = "bob";
+let rword = "";
+//pushing word to stack
+for (var i = 0; i < word.length; i++) {
+  letter.push(word[i]);
+}
+//popin out of stack and reversing
+for (var i = 0; i < word.length; i++) {
+  rword += letter.pop();
+}
+if (word === rword) {
+  console.log(word + " is a palindrome");
+} else {
+  console.log(word + "is not a palindrome");
+}
 class mySet {
   constructor() {
     //the collection array
